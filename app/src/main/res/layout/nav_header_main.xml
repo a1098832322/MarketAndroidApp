@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="250dp"
+              android:background="@drawable/side_nav_bar"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/user_header_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/person_head"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/cutecat"/>
+
+        <TextView
+            android:id="@+id/user_name_header"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="@string/need_login"
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/un_login_dead"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/need_login"
+            android:textColor="#ffffff"
+            android:textSize="24sp"/>
+    </RelativeLayout>
+</LinearLayout>

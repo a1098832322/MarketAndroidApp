@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- <group android:checkableBehavior="single">-->
+
+
+    <item android:title="导航">
+        <menu>
+            <item
+                android:id="@+id/shouye"
+                android:icon="@drawable/home"
+                android:title="首页"/>
+            <item
+                android:id="@+id/fenlei"
+                android:icon="@drawable/category"
+                android:title="分类"/>
+            <item
+                android:id="@+id/wode"
+                android:icon="@drawable/mine"
+                android:title="我的"/>
+        </menu>
+    </item>
+    <item android:title="账户">
+        <menu>
+            <item
+                android:id="@+id/denglu"
+                android:icon="@drawable/login"
+                android:title="登录"/>
+            <item
+                android:id="@+id/zhuce"
+                android:icon="@drawable/signup"
+                android:title="注册"/>
+            <item
+                android:id="@+id/zhuxiao"
+                android:icon="@drawable/login"
+                android:title="注销"/>
+
+        </menu>
+    </item>
+
+
+</menu>

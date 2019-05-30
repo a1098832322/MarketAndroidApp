@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">Market</string>
+    <string name="app_description">在线购物，享你所想！</string>
+
+    <!--customs-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="btn1">收藏</string>
+    <string name="btn2">对比</string>
+    <string name="my_app_name">标准指标深层揭示APP V1.0</string>
+    <string name="corp_name">©国标院</string>
+
+    <string name="tips_wifi">仅WIFI环境下显示图片</string>
+    <string name="tips_none">不显示图片</string>
+    <string name="tips_all">所有网络环境下均显示图片</string>
+
+
+    <!-- 登陆界面显示用的String们 -->
+    <string name="prompt_account">请输入登陆邮箱</string>
+    <string name="prompt_password">请输入密码</string>
+    <string name="action_sign_in">登陆</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_account">输入的用户名不符合规则，请重新输入！</string>
+    <string name="error_invalid_password">输入的密码过短！</string>
+    <string name="error_incorrect_password">输入的密码不正确！</string>
+    <string name="error_field_required">输入框不能为空！</string>
+
+    <!-- 主界面 -->
+    <string name="main_username_title">用户名：</string>
+    <string name="main_login_flag">恭喜！登陆成功！</string>
+    <string name="main_sometext">下面是数据库用户列表~</string>
+    <string name="sign_out_btn_txt">退出登录</string>
+    <string name="need_login">未登录，请先登录！</string>
+
+    <!--Dialog相关-->
+    <string name="title_alert">提示信息</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+
+    <!-- 关于我的界面 -->
+    <string name="my_cart">购物车</string>
+    <string name="my_bought">历史购买</string>
+    <string name="user_center">个人中心</string>
+    <string name="about">关于</string>
+    <string name="setting">设置</string>
+    <string name="update">检测更新</string>
+    <string name="software_setting">软件设置</string>
+    <string name="exit">退出应用</string>
+    <string name="tv_account">登录账号：</string>
+    <string name="tv_username">昵称</string>
+    <string name="tv_password">密码</string>
+
+    <!--商品首页-->
+    <string name="home_search">搜索....</string>
+    <string name="home_hot_cate">热销产品</string>
+    <string name="home_recommend">产品推荐</string>
+
+    <!--搜索页-->
+    <string name="search_title">商品搜索</string>
+
+    <!--商品详情页-->
+    <string name="commodity_detail_title">商品详情</string>
+    <string name="commodity_detail_service">服务</string>
+    <string name="commodity_detail_info">产品信息</string>
+    <string name="commodity_detail_same_type">猜你喜欢</string>
+    <string name="commodity_price">商品单价：</string>
+    <string name="commodity_btn_buy">购买</string>
+    <string name="commodity_btn_cart">加入购物车</string>
+
+    <!--SearchView-->
+    <string name="search_cancel">取消</string>
+    <string name="search_hint">请输入搜索内容</string>
+    <string name="search_history">历史记录</string>
+    <string name="search_clean_history">清除历史</string>
+
+    <!--dialog-->
+    <string name="cart_dialog_title">请选择商品数量</string>
+    <string name="cart_dialog_btn_ok">确定</string>
+
+    <!--购物车-->
+    <string name="cart_title">购物车</string>
+    <string name="cart_edit">编辑</string>
+    <string name="all_check">全选</string>
+    <string name="total">合计:0.00</string>
+    <string name="buy">结算(0)</string>
+    <string name="btn_reduce"> - </string>
+    <string name="default_edit_text">1</string>
+    <string name="btn_add"> + </string>
+    <string name="item_commodity_name_demo">酒红色纯红色纯羊毛西服套装</string>
+    <string name="item_commodity_info_demo">属性:粉蓝色</string>
+    <string name="item_commodity_price_demo">￥390</string>
+    <string name="item_commodity_number_demo">x1</string>
+
+    <!--关于界面-->
+    <string name="about_text">当前版本： 1.0.0</string>
+    <string name="copyright">Copyright  ©  舒千惠 2019</string>
+
+    <!--软件设置界面-->
+    <string name="software_setting_title">软件设置</string>
+    <string name="clear_data">清除缓存</string>
+</resources>

@@ -1,0 +1,146 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="fidst_activity_fragment_title">
+
+
+        <!-- Customize your theme here. -->
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <!--   <item name="android:drawablePadding">3dp</item>-->
+        <item name="android:textColor">@drawable/bottom_button_text_selector</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--登陆界面样式-->
+    <style name="AppTheme.Dark" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/certainblue</item>
+        <item name="colorPrimaryDark">@color/certainblue</item>
+        <item name="colorAccent">@color/black</item>
+
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textColor">@color/certainblue</item>
+
+        <item name="colorControlNormal">@color/iron</item>
+        <item name="colorControlActivated">@color/certainblue</item>
+        <item name="colorControlHighlight">@color/certainblue</item>
+        <item name="android:textColorHint">@color/iron</item>
+    </style>
+    <!--登陆界面按钮样式-->
+    <style name="ButtonTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorButtonNormal">@color/certainblue</item><!--正常状态下的颜色  -->
+        <item name="colorControlHighlight">#22000000</item><!--覆盖色，按下的颜色  -->
+    </style>
+    <!--登陆提示框按钮样式-->
+    <style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/certainblue</item>
+        <item name="android:textColorPrimary">@color/iron</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    <!--登陆界面样式END-->
+
+    <!--关于我的界面样式-->
+    <!-- 共用层样式 -->
+    <style name="base_layout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <!-- 最外层样式 -->
+    <style name="wrap_layout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:padding">1px</item>
+        <item name="android:background">@drawable/bg_layout_shape</item>
+    </style>
+    <!-- 上圆角样式 -->
+    <style name="top_layout" parent="base_layout">
+        <item name="android:background">@drawable/top_layout_selector</item>
+    </style>
+    <!-- textview样式 -->
+    <style name="usertext">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/text_clo</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <!-- 文本右边箭头样式 -->
+    <style name="img_arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/setting_arrow</item>
+    </style>
+    <!-- view分割线样式 -->
+    <style name="bg_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/border_clo</item>
+    </style>
+    <!--无圆角样式  -->
+    <style name="mid_layout" parent="base_layout">
+        <item name="android:background">@drawable/mid_layout_selector</item>
+    </style>
+    <!-- 下圆角样式 -->
+    <style name="bottom_layout" parent="base_layout">
+        <item name="android:background">@drawable/bottom_layout_selector</item>
+    </style>
+    <!-- 全圆角样式 -->
+    <style name="single_layout" parent="base_layout">
+        <item name="android:background">@drawable/single_layout_selector</item>
+    </style>
+    <!-- 全圆角样式2 -->
+    <style name="single_layout_for_exit" parent="base_layout">
+        <item name="android:background">@drawable/single_layout_selector2</item>
+    </style>
+    <!--关于我的界面样式END-->
+
+    <!--自定义按钮颜色样式-->
+    <style name="PrimaryButton" parent="Theme.AppCompat">
+        <item name="colorButtonNormal">@color/light_blue</item>
+        <item name="colorControlHighlight">@color/iron</item>
+    </style>
+    <!--自定义按钮颜色样式END-->
+
+    <!-- 对话框样式 -->
+    <style name="dialog_bottom_full" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+    <!-- 对话框样式END -->
+</resources>

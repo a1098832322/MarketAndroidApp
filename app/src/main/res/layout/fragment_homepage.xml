@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homepage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context="com.sqh.market.activity.DetailsActivity">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="italic|bold" />
+
+        <SearchView
+            android:id="@+id/home_serachview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:focusable="false"
+            android:iconifiedByDefault="false"
+            android:queryHint="@string/home_search"></SearchView>
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_alignParentStart="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/product"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:background="#FFFFFF">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="11dp" />
+
+                    <LinearLayout
+                        android:id="@+id/points"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/banner_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/product"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <com.youth.banner.Banner
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/TableLinecolor"></View>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/hotlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/banner_layout"
+                    android:layout_alignParentStart="true">
+
+                    <ImageView
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/hot_title"
+                        android:src="@drawable/home53" />
+
+                    <TextView
+                        android:id="@+id/hot_title"
+                        android:layout_width="200px"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:paddingLeft="5dp"
+                        android:text="@string/home_hot_cate"
+                        android:textColor="#FF4040"
+                        android:textSize="45px" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/hotproduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hotlayout"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="@color/TableLinecolor"></View>
+
+                    <GridView
+                        android:id="@+id/hot_gridview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/TableLinecolor"
+                        android:horizontalSpacing="0.5dp"
+                        android:numColumns="2"
+                        android:verticalSpacing="0.5dp"
+                        android:visibility="gone" />
+
+                    <ProgressBar
+                        android:id="@+id/hot_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="@color/TableLinecolor"></View>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/recommendlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/hotproduct"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/recommend_title"
+                        android:src="@drawable/recommend" />
+
+                    <TextView
+                        android:id="@+id/recommend_title"
+                        android:layout_width="200px"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:paddingLeft="5dp"
+                        android:text="@string/home_recommend"
+                        android:textColor="#FFC125"
+                        android:textSize="45px" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/recommendproduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recommendlayout"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/TableLinecolor"></View>
+
+                    <GridView
+                        android:id="@+id/recommend_gridview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/TableLinecolor"
+                        android:horizontalSpacing="1dp"
+                        android:numColumns="2"
+                        android:verticalSpacing="15dp"
+                        android:visibility="gone" />
+
+                    <ProgressBar
+                        android:id="@+id/recommend_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/TableLinecolor"></View>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

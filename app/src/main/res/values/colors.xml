@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff387ef5</color>
+    <color name="colorPrimaryDark">#ff387ef5</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--基础颜色表-->
+    <color name="light_blue">#03a9f4</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="blue">#419DE4</color>
+    <color name="red">#ff0000</color>
+    <color name="amber">#ffc107</color>
+    <color name="gray">#808080</color>
+    <color name="light_gray">#E0E0E0</color>
+
+    <!--登录页面相关-->
+    <color name="certainblue">#ff387ef5</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+
+    <!--按钮样式-->
+    <color name="button_normal">#858585</color>
+    <color name="button_press">#387ef5</color>
+
+    <!-- “我的”界面描边颜色 -->
+    <color name="border_clo">#ccc</color>
+    <color name="text_clo">#333</color>
+
+    <!--搜索详情页面-->
+    <color name="titlebarColor">#387ef5</color>
+    <color name="titleTextColor">#ffffff</color>
+    <color name="main_textTitleColor">#939090</color>
+    <color name="main_textAlertColor">#ff0000</color>
+    <color name="main_textColor">#000000</color>
+
+    <!--关于我的界面-->
+    <color name="background_dark">#ECECEC</color>
+
+    <!--详情页面-->
+    <color name="TableLinecolor">#fff5f5f5</color>
+
+    <!--搜索详情页面-->
+    <color name="red_normal">#FF0000</color>
+
+    <!--搜索界面-->
+    <color name="lineColor">#ff4081</color>
+    <color name="white_pressed">#FFCFCFCF</color>
+    <!--树形目录-->
+    <color name="sub_menu_linecolor">#858585</color>
+    <color name="main_menu_textcolor">#000000</color>
+
+    <!--dialog-->
+    <color name="dialog_btn_color">#00B4C9</color>
+
+    <!--购物车界面-->
+    <color name="blue_button">#ff387ef5</color>
+</resources>
