@@ -13,3 +13,30 @@
 > * 模拟购买商品、查询购买历史
 
 ## 图示
+* 欢迎页
+![](README_files/20.jpg)
+
+
+* 首页
+![](README_files/21.jpg)
+
+* 首页2
+![](README_files/22.jpg)
+
+* 商品分类
+![](README_files/23.jpg)
+
+* 个人页
+![](README_files/24.jpg)
+
+* 登录/注册
+![](README_files/25.jpg)
+
+* 商品详情
+![](README_files/26.jpg)
+
+* 购物车
+![](README_files/27.jpg)
+
+* 购买历史
+![](README_files/19.jpg)
