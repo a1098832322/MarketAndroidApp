@@ -1,4 +1,11 @@
 # 项目说明
+![](https://img.shields.io/badge/Api-23--26-green.svg)
+[![](https://img.shields.io/badge/Download-5M-blue.svg)](https://github.com/a1098832322/MarketAndroidApp/blob/master/release/Market-1.0.1-release.apk)
+![](https://img.shields.io/badge/License-Apache%202.0-orange.svg)
+
+> 提供了一个简易的购物商城App的实现思路，能完成大部分购物商城应有的功能。其中：添加收货地址，添加收货人信息，使用支付宝/微信支付等功能未开发   ~~(也不打算开发)~~  
+>
+> 希望可以给大家完成自己的商城App提供一个思路！
 
 ## 开发环境
 * Android Studio 3.2 
@@ -15,7 +22,6 @@
 ## 开发/编译/调试
 1、确保开发环境没有问题  
 2、本地环境部署请下载服务端源码：[Market Server](https://github.com/a1098832322/MarketServer)  
-
 3、/app/src/main/java/com/sqh/market/constant/Constants.java 文件下  
 修改BASE_URL的地址为你本地的服务端地址。若仅测试使用，则使用默认地址：http://wishes-blog.cn/market
 
