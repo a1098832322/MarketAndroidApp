@@ -14,7 +14,8 @@
 
 ## 开发/编译/调试
 1、确保开发环境没有问题  
-2、本地环境部署请下载服务端源码：[Market Server](https://github.com/a1098832322/MarketServer)
+2、本地环境部署请下载服务端源码：[Market Server](https://github.com/a1098832322/MarketServer)  
+
 3、/app/src/main/java/com/sqh/market/constant/Constants.java 文件下  
 修改BASE_URL的地址为你本地的服务端地址。若仅测试使用，则使用默认地址：http://wishes-blog.cn/market
 
@@ -22,6 +23,7 @@
 ## 运行
 * 初次运行，软件会弹出权限请求弹窗，请给予相应权限；  
 * Android 6.0 、 7.0、 8.0可用。  6.0版本以下不可用，8.0以上系统不保证能正常使用。 各机型没有条件做适配，能不能用看个缘~
+* 样例Apk和默认代码编译出来的Apk使用的都是我云服务器地址。因为云服务器带宽较低，所以商品信息及菜单拉取速度较慢。这里比较推荐你们架设自己的Server端。方法参考：开发/编译/调试 说明
 
 ## 图示
 * 欢迎页
