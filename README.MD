@@ -30,6 +30,9 @@
 * 初次运行，软件会弹出权限请求弹窗，请给予相应权限；  
 * Android 6.0 、 7.0、 8.0可用。  6.0版本以下不可用，8.0以上系统不保证能正常使用。 各机型没有条件做适配，能不能用看个缘~
 * 样例Apk和默认代码编译出来的Apk使用的都是我云服务器地址。因为云服务器带宽较低，所以商品信息及菜单拉取速度较慢。这里比较推荐你们架设自己的Server端。方法参考：开发/编译/调试 说明
+* 单机版demo下载：
+> [单机版demo](https://github.com/a1098832322/MarketAndroidApp/blob/master/release/%E5%8D%95%E6%9C%BA%E7%89%88%E6%9C%ACdemo.apk)  
+> [网络版demo](https://github.com/a1098832322/MarketAndroidApp/blob/master/release/%E8%81%94%E7%BD%91%E7%89%88Demo.apk)
 
 ## 图示
 * 欢迎页
