@@ -1,15 +1,15 @@
 package com.sqh.market.adapter;
 
 import android.content.Context;
-import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.sqh.market.R;
 import com.sqh.market.models.CommodityModel;
-import com.sqh.market.utils.ImageUtil;
 
 import java.util.List;
 
@@ -26,6 +26,9 @@ public class HotGridViewAdapter extends BaseAdapter {
     public HotGridViewAdapter(Context context, List<CommodityModel> listItemHot) {
         this.context = context;
         this.listItemHot = listItemHot;
+        //实例化ImageLoader
+        ImageLoaderConfiguration configuration = ImageLoaderConfiguration.createDefault(context);
+        ImageLoader.getInstance().init(configuration);
     }
 
     @Override
@@ -72,11 +75,6 @@ public class HotGridViewAdapter extends BaseAdapter {
         String name = commodity.getCommodityName();
         String info = commodity.getCommodityInfo();
         Double price = commodity.getCommodityPrice();
-        //需要裁剪掉base64编码的头才能正常显示
-        Bitmap bitmap = ImageUtil.base64ToBitmap(
-                commodity.getCommodityImg()
-                        .substring(commodity.getCommodityImg().indexOf("base64") + 6));
-
 
         holder.commodityInfo.setText(info);
         holder.commodityInfo.setTextSize(14);
@@ -84,7 +82,10 @@ public class HotGridViewAdapter extends BaseAdapter {
         holder.commodityName.setTextSize(18);
         holder.commodityPrice.setText("￥ " + price + "元");
         holder.commodityPrice.setTextSize(14);
-        holder.img.setImageBitmap(bitmap);
+
+        //绑定图片到控件
+        ImageLoader.getInstance().displayImage(commodity.getCommodityOtherImgUrls(), holder.img);
+
 
         return convertView;
     }

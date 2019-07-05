@@ -105,6 +105,7 @@ public class MainActivity extends AppCompatActivity
         //初次进入App时请求相关权限
         ActivityCompat.requestPermissions(this,
                 new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE
+                        , Manifest.permission.CAMERA
                         , Manifest.permission.INTERNET
                         , Manifest.permission.ACCESS_NETWORK_STATE}
                 , REQUEST_CODE_ASK_PERMISSIONS);

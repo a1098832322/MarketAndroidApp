@@ -17,7 +17,6 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.sqh.market.R;
 import com.sqh.market.models.CartModel;
 
-
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.List;
@@ -34,7 +33,7 @@ public class ShoppingCartAdapter extends BaseAdapter {
 
     public ShoppingCartAdapter(Context context) {
         this.context = context;
-        //实话ImageLoader
+        //实例化ImageLoader
         ImageLoaderConfiguration configuration = ImageLoaderConfiguration.createDefault(context);
         ImageLoader.getInstance().init(configuration);
     }

@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.sqh.market.R;
 import com.sqh.market.models.CommodityModel;
 import com.sqh.market.utils.ImageUtil;
@@ -30,6 +32,10 @@ public class CommodityItemAdapter extends BaseAdapter {
     public CommodityItemAdapter(Context mContext, List<CommodityModel> menuDatas) {
         this.mContext = mContext;
         this.menuDatas = menuDatas;
+
+        //实例化ImageLoader
+        ImageLoaderConfiguration configuration = ImageLoaderConfiguration.createDefault(mContext);
+        ImageLoader.getInstance().init(configuration);
     }
 
     //debug时使用的构造方法
@@ -37,6 +43,10 @@ public class CommodityItemAdapter extends BaseAdapter {
         this.mContext = mContext;
         this.menuDatas = menuDatas;
         this.mHandler = handler;
+
+        //实例化ImageLoader
+        ImageLoaderConfiguration configuration = ImageLoaderConfiguration.createDefault(mContext);
+        ImageLoader.getInstance().init(configuration);
     }
 
     //选中的position,及时更新数据
@@ -97,16 +107,12 @@ public class CommodityItemAdapter extends BaseAdapter {
         String name = commodity.getCommodityName();
         String info = commodity.getCommodityInfo();
         Double price = commodity.getCommodityPrice();
-        //需要裁剪掉base64编码的头才能正常显示
-        Bitmap bitmap = ImageUtil.base64ToBitmap(
-                commodity.getCommodityImg()
-                        .substring(commodity.getCommodityImg().indexOf("base64") + 6));
-
 
         holder.commodityInfo.setText(info);
         holder.commodityName.setText(name);
         holder.commodityPrice.setText("￥ " + price + "元");
-        holder.img.setImageBitmap(bitmap);
+        //绑定图片到控件
+        ImageLoader.getInstance().displayImage(commodity.getCommodityOtherImgUrls(), holder.img);
 
         return convertView;
     }

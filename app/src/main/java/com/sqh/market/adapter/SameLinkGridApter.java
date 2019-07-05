@@ -2,15 +2,15 @@ package com.sqh.market.adapter;
 
 
 import android.content.Context;
-import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.sqh.market.R;
 import com.sqh.market.models.CommodityModel;
-import com.sqh.market.utils.ImageUtil;
 
 import java.util.List;
 
@@ -30,6 +30,10 @@ public class SameLinkGridApter extends BaseAdapter {
         this.context = context;
         this.listItemSameLink = listItemRecommend;
         inflater = LayoutInflater.from(context);
+
+        //实例化ImageLoader
+        ImageLoaderConfiguration configuration = ImageLoaderConfiguration.createDefault(context);
+        ImageLoader.getInstance().init(configuration);
     }
 
     @Override
@@ -72,14 +76,10 @@ public class SameLinkGridApter extends BaseAdapter {
         CommodityModel commodity = listItemSameLink.get(position);
         String name = commodity.getCommodityName();
 
-        //需要裁剪掉base64编码的头才能正常显示
-        Bitmap bitmap = ImageUtil.base64ToBitmap(
-                commodity.getCommodityImg()
-                        .substring(commodity.getCommodityImg().indexOf("base64") + 6));
-
         holder.commodityName.setText(name);
         holder.commodityName.setTextSize(18);
-        holder.img.setImageBitmap(bitmap);
+        //绑定图片到控件
+        ImageLoader.getInstance().displayImage(commodity.getCommodityOtherImgUrls(), holder.img);
 
         return convertView;
     }
